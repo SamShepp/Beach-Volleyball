@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html> <link rel="stylesheet" type="text/css"href="style1.css">
+<head> 
+<title>Slammers Volleyball</title>
+</head>
+<body>
+<div id="banner"><img src="vector_volleyball.jpg" alt="Volleyball">
+<h1>It's time to Slam!</h1></div>
+<h2><p>Sign up here!<br></p></h2>
+<div id="center">
+<div id="list"><ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="guidelines.html">Guidelines</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a class="active" href="#signup">Sign Up</a></li>
+</ul></div>
+		<h2><div id="announcement">Announcements<br>
+Sign up using the button below to register your name, your phone number, your email address, the day you wish to compete on and the time at which you wish to compete (either morning or afternoon)<br>
+<br>
+<button class="myBtn button4" id="myBtn">Registration form</button>
+
+
+<div id="myModal" class="modal">
+
+ 
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Sign up here</h2>
+    </div>
+    <div class="modal-body">
+      
+<div id="form">
+  <form>
+    <label for="fname">Your Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+
+    <label for="fname">Phone Number</label>
+    <input type="text" id="phnum" name="phonenumber" placeholder="Phone number..">
+
+    <label for="fname">Email Address</label>
+    <input type="text" id="eadd" name="emailaddress" placeholder="Email address.."><br>
+    <br>
+
+    <label for="date">Competition date</label><br>
+    <input type="date" id="date" name="date"><br>
+    <br>
+
+     <label for="time">Time</label>
+    <select id="time" name="time">
+      <option value="Morning">Morning</option>
+      <option value="afternoon">Afternoon</option>
+    </select>
+
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="other">Other</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+    </div>
+</div></div></div>
+</h2>
+
+<script>
+var modal = document.getElementById('myModal');
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<br>
+<br>
+<br />
+<div id="footer"><footer> <br />
+<h4>Phone is 47712233 <br />
+fax: 4771 2244 <br />
+address: 123 Pokemund Street, Cairsville <br />
+email: slammers@ gmail.com</h4><br /></footer></div>
+</body>
+</html>
